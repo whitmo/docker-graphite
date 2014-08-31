@@ -29,7 +29,7 @@ RUN apt-get -y install gunicorn
 RUN mkdir -p /opt/graphite/webapp
 WORKDIR /opt/graphite/webapp
 
-ENV GRAPHITE_STORAGE_DIR /opt/graphite/storage
+ENV GRAPHITE_STORAGE_DIR /data/carbon
 ENV GRAPHITE_CONF_DIR /opt/graphite/conf
 ENV PYTHONPATH /opt/graphite/webapp
 
